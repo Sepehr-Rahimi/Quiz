@@ -28,8 +28,11 @@ const Login = () => {
                         <span>Email : </span>
                         <input type='email' className="grow bg-slate-200 px-2 mx-2 border border-slate-500 rounded-md" />
                     </div>
-                    <div className="flex flex-col border-b border-black
-                    ">
+                    <div className=" w-full flex px-2 py-5 border-b border-black items-center ">
+                        <span>Age : </span>
+                        <input type='number' className="grow bg-slate-200 px-2 mx-2 border border-slate-500 rounded-md" />
+                    </div>
+                    <div className="flex flex-col border-b border-black">
                         <div className=" w-full flex px-2 py-5  items-center">
                             <span>Password : </span>
                             <input onChange={({target}) => {setPassword(target.value)}} value={password} type='password' className="grow bg-slate-200 px-2 mx-2 border border-slate-500 rounded-md" />
@@ -42,10 +45,6 @@ const Login = () => {
                             onChange={(isValid) => setIsPasswordValid(isValid) }
                             iconSize={13}
                         />
-                    </div>
-                    <div className=" w-full flex px-2 py-5 border-b border-black items-center ">
-                        <span>Age : </span>
-                        <input type='number' className="grow bg-slate-200 px-2 mx-2 border border-slate-500 rounded-md" />
                     </div>
                 </div>
                 <button onClick={() => {navigate('/Questions')}}  disabled={!isPasswordValid} className="border border-black py-1 px-4 my-4 rounded-lg shadow-md shadow-black hover:scale-95 bg-slate-100 disabled:opacity-50" >Start quiz</button>

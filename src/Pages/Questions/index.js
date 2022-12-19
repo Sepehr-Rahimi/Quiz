@@ -1,2 +1,2 @@
-import Questions from "./Questions";
-export default Questions
+import QuestionsRouter from "./Router";
+ export default QuestionsRouter

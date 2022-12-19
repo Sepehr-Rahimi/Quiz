@@ -10,11 +10,11 @@ const questions = [
         answers:[
             {
                 id:1,
-                content:'Python'
+                content:'CSS'
             },
             {
                 id:2,
-                content:'CSS'
+                content:'Python'
             },
             {
                 id:3,
@@ -25,7 +25,7 @@ const questions = [
                 content:'HTML'
             },
         ],
-        rightAnswerId:1
+        rightAnswerId:2
     },
     {
         id:2,
@@ -33,7 +33,7 @@ const questions = [
         answers:[
             {
                 id:1,
-                content:'Styling'
+                content:'Nothing'
             },
             {
                 id:2,
@@ -45,10 +45,10 @@ const questions = [
             },
             {
                 id:4,
-                content:'Nothing'
+                content:'Styling'
             },
         ],
-        rightAnswerId:1
+        rightAnswerId:4
     },
     {
         id:3,
@@ -79,7 +79,7 @@ const questions = [
         answers:[
             {
                 id:1,
-                content:'Bootstarp'
+                content:'CSS'
             },
             {
                 id:2,
@@ -87,14 +87,14 @@ const questions = [
             },
             {
                 id:3,
-                content:'CSS'
+                content:'Bootstarp'
             },
             {
                 id:4,
                 content:'JavaScript'
             },
         ],
-        rightAnswerId:1
+        rightAnswerId:3
     },
     {
         id:5,
@@ -110,7 +110,7 @@ const questions = [
             },
             {
                 id:3,
-                content:'react-creat-app'
+                content:'react-create-app'
             },
             {
                 id:4,

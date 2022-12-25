@@ -1,10 +1,21 @@
 import {BiRadioCircleMarked} from 'react-icons/bi'
 import clsx from 'clsx'
+import { useEffect } from 'react'
+import useRerender from '../../../Hooks/useRerender'
 
 
 
-const Answers = ({answers,rightAnswerId,answerId,setAnswerId}) => {
+const Answers = ({answers,rightAnswerId,questionId}) => {
 
+    const {rerender} = useRerender()
+    useEffect(() => {
+        if (!localStorage.getItem(questionId)) {
+            localStorage.setItem(questionId,null)
+        }
+    },[questionId])
+
+    
+    const answerId = JSON.parse(localStorage.getItem(questionId))
 
 
 
@@ -17,7 +28,8 @@ const Answers = ({answers,rightAnswerId,answerId,setAnswerId}) => {
             {'bg-red-400' : answerId && answerId === id && id !== rightAnswerId},
             )}
             onClick={() => {
-                setAnswerId(id)
+                localStorage.setItem(questionId,id)
+                rerender()
             }}
             >
                 <span className='pr-4'>
